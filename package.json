@@ -9,12 +9,18 @@
   "keywords": [
     "iamport",
     "react",
-    "react-native"
+    "react-native",
+    "vue",
+    "vue-native"
   ],
-  "author": "Solee Deedee Choi",
+  "author": {
+    "name": "Solee Deedee Choi",
+    "email": "mymusese@gmail.com",
+    "url": "https://github.com/SoleeChoi"
+  },
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/iamport/iamport-vue-native"
-  },
-  "license": "ISC"
+  }
 }

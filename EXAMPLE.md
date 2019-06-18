@@ -3,7 +3,7 @@
 [ ![alt text](https://img.shields.io/badge/react--native-v0.59.8-yellow.svg?longCache=true&style=flat-square) ](https://github.com/facebook/react-native)
 [ ![alt text](https://img.shields.io/badge/query--string-v6.1.0-green.svg?longCache=true&style=flat-square) ](https://github.com/sindresorhus/query-string)
 
-아임포트 뷰 네이티브 예제 안내입니다.
+아임포트 뷰 네이티브 예제 프로젝트 안내입니다.
 
 ## 예제 프로젝트
 #### IOS
@@ -20,7 +20,7 @@
   $ cd iamport-vue-native/example
   $ npm install
   $ react-native link iamport-react-native
-  $ react-native link react-native-webview
+  $ react-native link react-native-webview // iamport-react-native v1.1.0 이상 필수
   $ react-native run-ios
   ```
 

@@ -3,7 +3,7 @@
 [ ![alt text](https://img.shields.io/badge/react--native-v0.59.8-yellow.svg?longCache=true&style=flat-square) ](https://github.com/facebook/react-native)
 [ ![alt text](https://img.shields.io/badge/query--string-v6.1.0-green.svg?longCache=true&style=flat-square) ](https://github.com/sindresorhus/query-string)
 
-아임포트 뷰 네이티브 예제 프로젝트입니다. 뷰 네이티브는 뷰 자바스크립트와 리액트 네이티브를 연결하기 때문에, 뷰 네이티브 프로젝트에서 리액트 네이티브 라이브러리를 사용하실 수 있습니다. 따라서 아임포트 뷰 네이티브 모듈은 예제 프로젝트만 제공하고 있으머, 아래 내용은 뷰 네이티브 프로젝트에서 아임포트 리액트 네이티브 모듈을 사용하기 위한 안내입니다.
+아임포트 뷰 네이티브 예제 프로젝트입니다. 뷰 네이티브는 뷰 자바스크립트와 리액트 네이티브를 연결하기 때문에, 뷰 네이티브 프로젝트에서 리액트 네이티브 라이브러리를 사용하실 수 있습니다. 따라서 아임포트 뷰 네이티브 모듈은 따로 없으며 예제 프로젝트만 제공합니다. 아래 내용은 뷰 네이티브 프로젝트에서 [아임포트 리액트 네이티브 모듈](https://github.com/iamport/iamport-react-native)을 사용하기 위한 안내입니다.
 
 ## 목차
 - [버전정보](https://github.com/iamport/iamport-react-native/blob/master/VERSION.md)
@@ -18,7 +18,7 @@
 최신버전은 [v1.1.0](https://github.com/iamport/iamport-react-native/tree/master)입니다. 버전 히스토리는 [버전정보](VERSION.md)를 참고하세요.
 
 ## 지원정보
-아임포트 뷰 네이티브 모듈은 결제 및 휴대폰 본인인증 기능을 제공합니다. 결제시 지원하는 PG사와 결제수단에 대한 자세한 정보는 [지원정보](SUPPORT.md)를 참고하세요.
+아임포트 리액트 네이티브 모듈은 결제 및 휴대폰 본인인증 기능을 제공합니다. 결제시 지원하는 PG사와 결제수단에 대한 자세한 정보는 [지원정보](SUPPORT.md)를 참고하세요.
 
 ## 설치하기
 아래 명령어를 통해 아임포트 모듈을 귀하의 뷰 네이티브 프로젝트에 추가할 수 있습니다. 보다 자세한 안내는 [설치하기](INSTALL.md)를 참고하세요.
@@ -32,16 +32,16 @@ $ npm install iamport-react-native --save
 ```
 $ npm install -g react-native-cli
 $ react-native link iamport-react-native
-$ react-native link react-native-webview // v1.1.0 이상 필수
+$ react-native link react-native-webview // iamport-react-native v1.1.0 이상 필수
 ```
 
 ## 설정하기(IOS)
 IOS에서 아임포트 결제연동 모듈을 사용하기 위해서는 아래 3가지 항목을 설정해주셔야 합니다. 보다 자세한 설명은 [설정하기](SETTING.md)를 참고하세요.
 
 #### 1. App Scheme 등록
-외부 결제 앱(예) 페이코, 신한 판 페이)에서 결제 후 돌아올 때 사용할 URL identifier를 설정해야합니다.
+외부 결제 앱(예) 페이코, 신한 판 페이 등)에서 결제 후 돌아올 때 사용할 URL identifier를 설정해야합니다.
 
-![](src/img/app-scheme-registry.gif)
+![](https://github.com/iamport/iamport-react-native/raw/master/src/img/app-scheme-registry.gif)
 
 
 #### 2. 외부 앱 리스트 등록
@@ -90,7 +90,7 @@ IOS에서 아임포트 결제연동 모듈을 사용하기 위해서는 아래 3
 
 #### 3. App Transport Security 설정
 
-![](src/img/allow-arbitrary.gif)
+![](https://github.com/iamport/iamport-react-native/raw/master/src/img/allow-arbitrary.gif)
 
 ```html
 <key>NSAppTransportSecurity</key>
@@ -204,7 +204,7 @@ export default {
 
 
 ## 콜백 함수 설정하기
-콜백 함수는 필수입력 필드로, 결제/본인인증 완료 후 실패/성공 여부에 맞게 아래와 같이 로직을 작성할 수 있습니다. 콜백 함수에 대한 자세한 설명은 [콜백 설정하기](CALLBACK.md)를 참고하세요.
+콜백 함수는 필수입력 필드로, 결제/본인인증 완료 후 실패/성공 여부에 맞게 아래와 같이 로직을 작성할 수 있습니다. 콜백 함수에 대한 자세한 내용은 [콜백 설정하기](CALLBACK.md)를 참고하세요.
 
 ```javascript
 methods: {
@@ -216,7 +216,7 @@ methods: {
 
 
 ## 아임포트 asset 추가하기
-개발 모드와는 달리, 릴리즈 모드에서 결제 창이 뜨지 않고 white screen으로 머물러있다는 문의가 종종 있습니다. 이는 프로젝트 배포를 위한 bundle 파일을 만들때, 아임포트 asset(`payment.html`, `certification.html`)이 제대로 추가되지 않았기 때문입니다. 뷰 네이티브는 리액트 네이티브와 마찬가지로 아래와 같이 `bundle 명령어`를 통해 bundle 파일을 만들고 필요한 asset을 추가(`copy`)합니다.
+개발 모드와는 달리, 릴리즈 모드에서 결제 창이 뜨지 않고 white screen으로 머물러있다는 문의가 종종 있습니다. 이는 프로젝트 배포를 위한 bundle 파일을 만들때, 아임포트 asset(`payment.html`과 `certification.html`)이 제대로 추가되지 않았기 때문입니다. 뷰 네이티브는 리액트 네이티브와 마찬가지로 아래와 같이 `bundle 명령어`를 통해 bundle 파일을 만들고 필요한 asset을 추가(`copy`)합니다.
 
 ### IOS bundle 명령어
 `ios` 폴더 하위에 `main.jsbundle` 파일과 `assets` 폴더를 생성합니다.

@@ -4,7 +4,7 @@
 [ ![alt text](https://img.shields.io/badge/react--native-v0.59.8-yellow.svg?longCache=true&style=flat-square) ](https://github.com/facebook/react-native)
 [ ![alt text](https://img.shields.io/badge/query--string-v6.1.0-green.svg?longCache=true&style=flat-square) ](https://github.com/sindresorhus/query-string)
 
-아임포트 뷰 네이티브 예제 콜백 설정 안내입니다.
+아임포트 뷰 네이티브 예제 프로젝트 콜백 설정 안내입니다.
 
 ## 콜백 함수 설정하기
 #### 1. 콜백은 필수입력
