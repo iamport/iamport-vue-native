@@ -1,0 +1,20 @@
+{
+  "name": "iamport-vue-native",
+  "version": "1.0.0",
+  "description": "뷰 네이티브용 아임포트 결제/본인인증 연동 예제",
+  "main": "example/index.js",
+  "directories": {
+    "example": "example"
+  },
+  "keywords": [
+    "iamport",
+    "react",
+    "react-native"
+  ],
+  "author": "Solee Deedee Choi",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iamport/iamport-vue-native"
+  },
+  "license": "ISC"
+}
