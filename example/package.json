@@ -6,6 +6,7 @@
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest"
   },
+  "license": "MIT",
   "dependencies": {
     "iamport-react-native": "^1.1.0",
     "native-base": "^2.12.1",
