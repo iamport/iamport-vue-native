@@ -5,6 +5,8 @@
 
 아임포트 뷰 네이티브 예제 프로젝트입니다. 뷰 네이티브는 뷰 자바스크립트와 리액트 네이티브를 연결하기 때문에, 뷰 네이티브 프로젝트에서 리액트 네이티브 라이브러리를 사용하실 수 있습니다. 따라서 아임포트 뷰 네이티브 모듈은 따로 없으며 예제 프로젝트만 제공합니다. 아래 내용은 뷰 네이티브 프로젝트에서 [아임포트 리액트 네이티브 모듈](https://github.com/iamport/iamport-react-native)을 사용하기 위한 안내입니다.
 
+뷰(VueJS)용 예제 프로젝트는 [여기](https://github.com/iamport/iamport-vue-example)를 참조해주세요.
+
 ## 목차
 - [버전정보](https://github.com/iamport/iamport-react-native/blob/master/VERSION.md)
 - [지원정보](https://github.com/iamport/iamport-react-native/blob/master/SUPPORT.md)
@@ -15,7 +17,7 @@
 - 아임포트 asset 추가하기
 
 ## 버전정보
-최신버전은 [v1.1.0](https://github.com/iamport/iamport-react-native/tree/master)입니다. 버전 히스토리는 [버전정보](VERSION.md)를 참고하세요.
+최신버전은 [v1.4.2](https://github.com/iamport/iamport-react-native/tree/master)입니다. 버전 히스토리는 [버전정보](VERSION.md)를 참고하세요.
 
 ## 지원정보
 아임포트 리액트 네이티브 모듈은 결제 및 휴대폰 본인인증 기능을 제공합니다. 결제시 지원하는 PG사와 결제수단에 대한 자세한 정보는 [지원정보](SUPPORT.md)를 참고하세요.
@@ -32,7 +34,7 @@ $ npm install iamport-react-native --save
 ```
 $ npm install -g react-native-cli
 $ react-native link iamport-react-native
-$ react-native link react-native-webview // iamport-react-native v1.1.0 이상 필수
+$ react-native link react-native-webview // v7.4.0 이상 필수
 ```
 
 ## 설정하기(IOS)
