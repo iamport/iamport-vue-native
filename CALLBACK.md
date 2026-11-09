@@ -4,6 +4,14 @@
 [ ![alt text](https://img.shields.io/badge/react--native-v0.59.8-yellow.svg?longCache=true&style=flat-square) ](https://github.com/facebook/react-native)
 [ ![alt text](https://img.shields.io/badge/query--string-v6.1.0-green.svg?longCache=true&style=flat-square) ](https://github.com/sindresorhus/query-string)
 
+> [!WARNING]
+> **이 저장소는 더 이상 유지보수되지 않습니다 (Deprecated).**
+>
+> 아래 포트원 공식 문서를 참고해 주세요.
+>
+> - **포트원 V2 (권장)**: [React Native SDK](https://developers.portone.io/sdk/ko/v2-mobile-sdk/react-native?v=v2) · [결제 연동 시작하기](https://developers.portone.io/opi/ko/integration/start/v2/readme?v=v2)
+> - **포트원 V1 (기존 아임포트)**: [iamport-react-native](https://github.com/portone-io/iamport-react-native)
+
 아임포트 뷰 네이티브 예제 프로젝트 콜백 설정 안내입니다.
 
 ## 콜백 함수 설정하기

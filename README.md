@@ -3,6 +3,14 @@
 [ ![alt text](https://img.shields.io/badge/react--native-v0.59.8-yellow.svg?longCache=true&style=flat-square) ](https://github.com/facebook/react-native)
 [ ![alt text](https://img.shields.io/badge/query--string-v6.1.0-green.svg?longCache=true&style=flat-square) ](https://github.com/sindresorhus/query-string)
 
+> [!WARNING]
+> **이 저장소는 더 이상 유지보수되지 않습니다 (Deprecated).**
+>
+> 아래 포트원 공식 문서를 참고해 주세요.
+>
+> - **포트원 V2 (권장)**: [React Native SDK](https://developers.portone.io/sdk/ko/v2-mobile-sdk/react-native?v=v2) · [결제 연동 시작하기](https://developers.portone.io/opi/ko/integration/start/v2/readme?v=v2)
+> - **포트원 V1 (기존 아임포트)**: [iamport-react-native](https://github.com/portone-io/iamport-react-native)
+
 아임포트 뷰 네이티브 예제 프로젝트입니다. 뷰 네이티브는 뷰 자바스크립트와 리액트 네이티브를 연결하기 때문에, 뷰 네이티브 프로젝트에서 리액트 네이티브 라이브러리를 사용하실 수 있습니다. 따라서 아임포트 뷰 네이티브 모듈은 따로 없으며 예제 프로젝트만 제공합니다. 아래 내용은 뷰 네이티브 프로젝트에서 [아임포트 리액트 네이티브 모듈](https://github.com/iamport/iamport-react-native)을 사용하기 위한 안내입니다.
 
 뷰(VueJS)용 예제 프로젝트는 [여기](https://github.com/iamport/iamport-vue-example)를 참조해주세요.
